@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.logoImg {
+  margin: 16px;
+}
+
+.search {
+  width: 30%;
+  display: flex;
+  margin: 16px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #EDEEF2;
+  background: #EDEEF2;
+  border-right: none;
+  padding: 5px;
+  height: 24px;
+  outline: none;
+  border-radius: 12px 0 0 12px;
+  color: #535353;
+}
+
+.searchTerm::-webkit-input-placeholder der {
+  color: #8a8ca1;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #EDEEF2;
+  background: #EDEEF2;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.nav .productList {
+  list-style: none;
+  text-align: center;
+
+}
+
+.nav .productList .productItem {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav .productList .productItem .productLink {
+  display: flex;
+  padding: 15px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.nav .productList .productItem .productLink,
+.nav .productList .productItem .productLink:after,
+.nav .productList .productItem .productLink:before {
+  transition: all .5s;
+}
+
+.nav .productList .productItem .productLink:hover {
+  color: #333;
+}
+
+nav.nav .productList .productItem .productLink {
+  position: relative;
+}
+
+nav.nav .productList .productItem .productLink:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #333;
+  height: 1px;
+}
+
+nav.nav .productList .productItem .productLink:hover:after {
+  width: 100%;
+}
+
+.productBorder {
+  border-right: 1px solid #EDEEF2;
+}
+
+.iconBasket {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #F3F4FF;
+  border: 2px solid #F3F4FF;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.basketSvg {
+  margin-top: 12px;
+}
+
+.mainImageAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+
+}
+
+.mainLinkAvatar {
+  width: 49px;
+  height: 49px;
+  border: 2px solid #EDEEF2;
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.wrapper {
+  position: relative;
+  top: 100px;
+}
+
+.actualBlock {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.actualWrap {
+  display: flex;
+  width: 540px;
+  height: 188px;
+  border-radius: 16px;
+  background: #F3F4FF;
+}
+
+div.actualWrapColor {
+
+  background: #FFF3ED;
+}
+
+.actualImage {
+  width: 100%;
+  object-fit: contain;
+}
+
+.actualWrapText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.actualText {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+
+}
+
+.actualTitleOne,
+.actualTitleTwo {
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  text-align: left;
+}
+
+.actualTitleOne {
+  color: #4E60FF;
+}
+
+.actualTitleTwo {
+  color: #FD6D22;
+}
+
+.actualTextTwo {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #83859C;
+}
+
+.foodSelectionList {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.foodSelectionLink {
+  width: 160px;
+  height: 80px;
+  border: 1px solid #EDEEF2;
+  border-radius: 16px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+  color: #545563;
+}
+.foodSelectionImg{
+  width: 24px;
+  height: 24px;
+}
+
+.foodSelectionLink:hover {
+  color: #4E60FF;
+  background: #F3F4FF;
+  border: 2px solid #4E60FF;
+}
+
+.sectionTitle {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  padding: 16px;
+}
+
+.restaurantsWrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.restaurantsBox {
+  position: relative;
+  width: 350px;
+  height: 276px;
+  border: 1px solid #EDEEF2;
+  border-radius: 16px;
+}
+
+.restaurantsImg {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
+}
+
+.restaurantsTitleWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 16px;
+}
+
+.restaurantsTitle {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.restaurantsTime {
+  margin: 0 16px;
+}
+
+.restaurantDot {
+  width: 3px;
+  height: 3px;
+  border: 50%;
+  margin: 4px;
+  border-radius: 50%;
+  background: #4E60FF;
+  display: inline-block;
+}
+
+.restaurantsTimeText {
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #83859C;
+}
+
+.restaurantsFoods {
+  display: flex;
+  margin: 16px;
+}
+
+.restaurantsFood {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17px;
+  width: 55px;
+  border-radius: 100px;
+  background: #EDEEF2;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #545563;
+  padding: 4px 10px 4px 10px;
+  margin-right: 10px;
+}
+.restaurantsFoodImg{
+  width: 12px;
+  height: 12px;
+}
+.primary{
+position: absolute;
+top: 0;
+right: 0;
+z-index: 99;
+
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.6px;
+text-transform: uppercase;
+background: #4E60FF;
+color: #fff;
+width: 100px;
+height: 24px;
+border-radius: 0 16px 0 16px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 16px;
+
+}
+
+footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  margin-top: 100px ;
+}
+
+.eastendFooter_sectionTwo-dark {
+  display: flex;
+  width: 100%;
+  padding: 32px 36px 0 36px;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+.eastendFooter_socialIcons {
+  width: 50%;
+  padding-bottom: 40px;
+  margin: 0 16px;
+}
+
+.signUp_button {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid black;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 30px;
+  width: 92px;
+  height: auto;
+}
+
+.signUp_button:hover {
+  text-decoration: 1px underline black;
+  background: #e5e5e5;
+}
+
+.eastendFooterIcons {
+  width: 50%;
+  padding-bottom: 17.6px;
+  margin: 0 16px
+}
+
+ul.eastendFooterIcons_list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.eastendFooterIcons_listItem {
+  padding: 0 16px 10px 0;
+}
+
+.eastendFooter_signupTitle,
+.eastendFooter_Text {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 600;
+  text-transform: none;
+}
+
+
+.eastendFooter_section-dark {
+  display: flex;
+  padding: 0 36px 16px;
+  background: #000;
+  color: #ffffff;
+}
+
+.footerLinkColumns-containers {
+  width: 50%;
+  border-top: 1px solid white;
+  padding-top: 8px;
+  margin: 0 16px;
+}
+
+.footerLinkColumns-containers2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 6.4px;
+  margin-right: 6.4px;
+}
+
+.footerColums-container {
+  padding: 16px 16px 8px 8px;
+  margin-bottom: 8px;
+}
+
+.footerLinkColumn-LevelTwo {
+  width: 206px;
+  margin: 0 16px;
+  border-top: 1px solid white;
+}
+
+.footerLink {
+  display: block;
+  padding: 16px 16px 8px 0;
+  margin-bottom: 8px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+  font-weight: 600;
+}
+
+.footerLinkColumns_Link {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 2.42;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footerLinkColumns_Item:hover {
+  background: rgb(121, 120, 120, .1);
+  color: #e5e5e5;
+  text-decoration: underline;
+}
+
+.Footer_thgCopyright {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.Footer_logoContainer {
+  display: flex;
+  width: 50%;
+  margin: 32px 16px 24px 16px;
+}
+
+.thgCopyright svg {
+  max-width: 130px;
+  height: 15px;
+
+}
+
+.thgCopyright_text {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 500;
+  letter-spacing: .2px;
+  color: #757575;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.Footer_paySecureIcons_container {
+  width: 50%;
+  margin: 32px 16px 24px 0;
+}
+
+.Footer_paySecurelyTitle {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 8px;
+}
+
+.footerPaymentIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.footerPaymentIcons_listItem {
+  padding: 2px;
+}

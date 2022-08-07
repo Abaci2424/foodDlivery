@@ -57,9 +57,12 @@
         <input class="searchTerm" type="text" placeholder="Search">
         <button type="submit" class="searchButton">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14 14L11.1 11.1" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+            <path
+              d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+              stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14 14L11.1 11.1" stroke="#83859C" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
         </button>
       </div>
 
@@ -87,7 +90,8 @@
 
   <section class="mobileHeader-container">
     <div class="top-nav">
-      <div>
+      <div class="logoWrap">
+        <div class="logoSvg"></div>
         <svg xmlns="http://www.w3.org/2000/svg" width="79" height="40" viewBox="0 0 79 40" fill="none">
           <path
             d="M1.66993 15.4324C1.17038 15.4324 0.763601 15.2825 0.449597 14.9828C0.149866 14.6688 0 14.262 0 13.7625V1.7732C0 1.27365 0.135593 0.888282 0.406778 0.617097C0.677964 0.345911 1.06333 0.210318 1.56289 0.210318H8.92771C9.47008 0.210318 9.86973 0.317365 10.1266 0.531459C10.3836 0.745553 10.512 1.08097 10.512 1.5377C10.512 1.98016 10.3836 2.30844 10.1266 2.52253C9.86973 2.73663 9.47008 2.84367 8.92771 2.84367H3.29704V6.31199H8.49952C9.04189 6.31199 9.44154 6.41904 9.69845 6.63313C9.95536 6.84723 10.0838 7.18264 10.0838 7.63937C10.0838 8.08183 9.95536 8.41011 9.69845 8.62421C9.44154 8.8383 9.04189 8.94535 8.49952 8.94535H3.29704V13.7625C3.29704 14.2763 3.14718 14.6831 2.84745 14.9828C2.56199 15.2825 2.16948 15.4324 1.66993 15.4324Z"
@@ -126,95 +130,100 @@
             d="M75.5311 26.0517C75.6596 25.752 75.838 25.5308 76.0664 25.388C76.309 25.2453 76.5659 25.1739 76.8371 25.1739C77.251 25.1739 77.615 25.3095 77.929 25.5807C78.243 25.8376 78.4 26.1516 78.4 26.5227C78.4 26.7225 78.35 26.9224 78.2501 27.1222L72.491 38.9402C72.3483 39.2399 72.1556 39.4611 71.913 39.6039C71.6703 39.7609 71.4134 39.8394 71.1422 39.8394C70.7426 39.8394 70.3929 39.7109 70.0932 39.454C69.7934 39.1971 69.6436 38.8831 69.6436 38.512C69.6436 38.2836 69.6935 38.0695 69.7934 37.8697L71.2064 34.9366L67.3956 27.1222C67.3099 26.9224 67.2671 26.7297 67.2671 26.5441C67.2671 26.1588 67.4313 25.8305 67.7595 25.5593C68.1021 25.2881 68.4874 25.1525 68.9156 25.1525C69.2011 25.1525 69.4651 25.231 69.7078 25.388C69.9504 25.5308 70.1431 25.752 70.2858 26.0517L72.9406 31.8323L75.5311 26.0517Z"
             fill="#4E60FF" />
         </svg>
+
+
+        <button type="submit" class="searchButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+              stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14 14L11.1 11.1" stroke="#83859C" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
 
-      <button class="headerSearch_toggleForm" data-toggle-form="" aria-label="Open search" title="Open search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M14 14L11.1 11.1" stroke="#83859C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        <span class="headerSearch_clearResults">
-        </span>
-      </button>
 
-     <div class="mainWrap">
-      <a class="iconBasket" href="#"><svg class="basketSvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-        viewBox="0 0 20 20" fill="none">
-        <path
-          d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
-          stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path
-          d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
-          stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg></a>
-    <a class="mainLinkAvatar" href="#"><img class="mainImageAvatar" src="img/avatar.jpg" alt=""></a>
+      <div class="mainWrap">
+        <a class="iconBasket" href="#"><svg class="basketSvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 20 20" fill="none">
+            <path
+              d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+              stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+              stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg></a>
+        <a class="mainLinkAvatar" href="#"><img class="mainImageAvatar" src="img/avatar.jpg" alt=""></a>
+
+        <span class="mainDash"></span>
 
 
-      <button class="menuButton">
-      <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-      <div class='menu-button'></div>
-    </label>
-      <ul class="menu">
+        <button class="menuButton">
+          <input id="menu-toggle" type="checkbox">
+          <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+          <ul class="menu">
             <li>Restaurants</li>
             <li>Deals</li>
             <li>My orders</li>
-      </ul>
+          </ul>
         </button>
       </div>
     </div>
-</section>
+  </section>
 
   <div class="wrapper">
     <div class="block">
-    <section class="actualBlock">
-      <div class="actualWrap">
-        <img class="actualImage" src="img/cake__1_-removebg-preview.png" alt="">
-        <div class="actualWrapText">
-          <p class="actualText">All deserts</p>
-          <h3 class="actualTitleOne">20% OFF</h3>
-          <p class="actualTextTwo">Deserty</p>
+      <section class="actualBlock">
+        <div class="actualWrap">
+          <img class="actualImage" src="img/cake__1_-removebg-preview.png" alt="">
+          <div class="actualWrapText">
+            <p class="actualText">All deserts</p>
+            <h3 class="actualTitleOne">20% OFF</h3>
+            <p class="actualTextTwo">Deserty</p>
+          </div>
         </div>
-      </div>
-      <div class="actualWrap actualWrapColor">
-        <img class="actualImage" src="img/burger__1_-removebg-preview.png" alt="">
-        <div class="actualWrapText">
-          <p class="actualText">Big Burgers</p>
-          <h3 class="actualTitleTwo">50% OFF</h3>
-          <p class="actualTextTwo">Fooddies</p>
+        <div class="actualWrap actualWrapColor">
+          <img class="actualImage" src="img/burger__1_-removebg-preview.png" alt="">
+          <div class="actualWrapText">
+            <p class="actualText">Big Burgers</p>
+            <h3 class="actualTitleTwo">50% OFF</h3>
+            <p class="actualTextTwo">Fooddies</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
-    <section class="foodSelectionList">
-      <a class="foodSelectionLink" href="#">
-        <img class="foodSelectionImg" src="img/emoji/pizza.png" alt="...">
-        <span>Pizza</span>
-      </a>
-      <a class="foodSelectionLink" href="#">
-        <img class="foodSelectionImg" src="img/emoji/burger.png" alt="...">
-        <span>Burger</span>
-      </a>
-      <a class="foodSelectionLink" href="#">
-        <img class="foodSelectionImg" src="img/emoji/meat.png" alt="...">
-        <span>BBQ</span>
-      </a>
-      <a class="foodSelectionLink" href="#">
-        <img class="foodSelectionImg" src="img/emoji/sushi.png" alt="...">
-        <span>Sushi</span>
-      </a>
-      <a class="foodSelectionLink" href="#">
-        <img class="foodSelectionImg" src="img/emoji/broccoli.png" alt="...">
-        <span>Broccoli</span>
-      </a>
-      <a class="foodSelectionLink" href="#">
-        <img class="foodSelectionImg" src="img/emoji/cake.png" alt="...">
-        <span>Disserts</span>
-      </a>
-    </section>
-  </div>
+      <section class="foodSelectionList">
+        <a class="foodSelectionLink" href="#">
+          <img class="foodSelectionImg" src="img/emoji/pizza.png" alt="...">
+          <span>Pizza</span>
+        </a>
+        <a class="foodSelectionLink" href="#">
+          <img class="foodSelectionImg" src="img/emoji/burger.png" alt="...">
+          <span>Burger</span>
+        </a>
+        <a class="foodSelectionLink" href="#">
+          <img class="foodSelectionImg" src="img/emoji/meat.png" alt="...">
+          <span>BBQ</span>
+        </a>
+        <a class="foodSelectionLink" href="#">
+          <img class="foodSelectionImg" src="img/emoji/sushi.png" alt="...">
+          <span>Sushi</span>
+        </a>
+        <a class="foodSelectionLink" href="#">
+          <img class="foodSelectionImg" src="img/emoji/broccoli.png" alt="...">
+          <span>Broccoli</span>
+        </a>
+        <a class="foodSelectionLink" href="#">
+          <img class="foodSelectionImg" src="img/emoji/cake.png" alt="...">
+          <span>Disserts</span>
+        </a>
+      </section>
+    </div>
 
     <section class="sectionBox">
       <h3 class="sectionTitle">Nearby restaurants</h3>
@@ -327,6 +336,117 @@
           </div>
         </div>
       </div>
+
+      <div class="restaurantsWrap">
+
+        <div class="restaurantsBox">
+          <img class="restaurantsImg" src="img/example/plank.jpg" alt="">
+          <div class="restaurantsTitleWrap">
+            <h3 class="restaurantsTitle">Royal Sushi House</h3>
+            <svg class="basketSvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <path
+                d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="restaurantsTime"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+              viewBox="0 0 12 12" fill="none">
+              <path
+                d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"
+                stroke="#C7C8D2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 3V6L8 7" stroke="#C7C8D2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="restaurantsTimeText"> 30-40 min</span>
+            <span class="restaurantDot"></span>
+            <span class="restaurantsTimeText">$32 min sum</span>
+          </div>
+          <div class="restaurantsFoods">
+            <span class="restaurantsFood"><img class="restaurantsFoodImg" src="img/emoji/sushi.png" alt="">
+              Sushi</span>
+          </div>
+          <span class="primary">Featured</span>
+        </div>
+
+        <div class="restaurantsBox">
+          <img class="restaurantsImg" src="img/example/food.jpg" alt="">
+          <div class="restaurantsTitleWrap">
+            <h3 class="restaurantsTitle">Burgers & Pizza</h3>
+            <svg class="basketSvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <path
+                d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="restaurantsTime"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+              viewBox="0 0 12 12" fill="none">
+              <path
+                d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"
+                stroke="#C7C8D2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 3V6L8 7" stroke="#C7C8D2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="restaurantsTimeText">40-60 min</span>
+            <span class="restaurantDot"></span>
+            <span class="restaurantsTimeText">$24 min sum</span>
+          </div>
+          <div class="restaurantsFoods">
+            <span class="restaurantsFood">
+              <img class="restaurantsFoodImg" src="img/emoji/burger.png" alt="">
+              Burger</span>
+            <span class="restaurantsFood">
+              <img class="restaurantsFoodImg" src="img/emoji/pizza.png" alt="">
+              Pizza</span>
+          </div>
+          <span class="primary">Featured</span>
+        </div>
+
+        <div class="restaurantsBox">
+          <img class="restaurantsImg" src="img/example/sushi.jpg" alt="">
+          <div class="restaurantsTitleWrap">
+            <h3 class="restaurantsTitle">Ninja sushi</h3>
+            <svg class="basketSvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <path
+                d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2.5 5H17.5" stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="restaurantsTime"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+              viewBox="0 0 12 12" fill="none">
+              <path
+                d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"
+                stroke="#C7C8D2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 3V6L8 7" stroke="#C7C8D2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="restaurantsTimeText">20-40 min</span>
+            <span class="restaurantDot"></span>
+            <span class="restaurantsTimeText">$40 min sum</span>
+          </div>
+          <div class="restaurantsFoods">
+            <span class="restaurantsFood">
+              <img class="restaurantsFoodImg" src="img/emoji/sushi.png" alt="">
+              Sushi</span>
+          </div>
+        </div>
+      </div>
+
+      
     </section>
 
   </div>
@@ -470,4 +590,5 @@
 
   </footer>
 </body>
+
 </html>

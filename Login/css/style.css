@@ -1,58 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap');
 
-* {
+body{
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
-/* Add padding to containers */
-.container {
+.wrapper {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.containerForm {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px 36px;
+}
+
+.cardOutlined {
+  width: 60%;
   padding: 16px;
-  background-color: white;
+  background: #697BFF;
 }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
+.login_container {
+  display: grid;
+}
+
+.login-form {
+  display: grid;
+  justify-items: center;
+  height: 100%;
+}
+
+.loginTitle {
+  font-family: Nunito;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.loginSubtitle {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.login_input {
+  border: 1px solid #C7C8D2;
+  border-radius: 8px;
+  height: 44px;
+}
+.login_button{
+  width: 318px;
+height: 20px;
+font-family: 'Nunito';
+
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+height: 44px;
+
+}
+.checkedBtm{
+  background: #4E60FF;
+box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+border-radius: 8px;
+color: #FFF;
+}
+.noCheckedBtm {
+  background: #FFF;
   border: none;
-  background: #f1f1f1;
+  counter-reset: #4E60FF;
+}
+.signup-container {
+  font-family: 'Nunito';
+
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+.cardOutlined_rating {
+  width: 315px;
+  height: 436px;
+  background: #FFFFFF;
+border: 1px solid #EDEEF2;
+border-radius: 14px;
+}
+.cardOutlined_header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EDEEF2;
+  padding: 12px;
+  align-items: center;
+}
+.cardOutlined_title {
+  font-family: Nunito;
+font-size: 12px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 1px;
+text-align: left;
+}
+.cardOut_rating {
+  font-family: 'Nunito';
+  
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #4E60FF;
 }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.cardOut_star{
+  font-family: 'Nunito';
+
+font-weight: 700;
+font-size: 10px;
+line-height: 14px;
+color: #83859C;
+}
+.cardOutReview-btn {
+  height: 39px;
+width: 107px;
+left: 191px;
+top: 16px;
+border-radius: 8px;
+padding: 12px, 16px, 12px, 16px;
+background: #FFF;
+  font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #4E60FF;
+border-radius: 8px;
+border: 1px solid #4E60FF;
+}
+.cardOutReview-btn:hover {
+  color: #FFF;
+  background: #4E60FF;
+}
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  
+}
+.formatsGroup {
+ 
+}
+.cardOutlined_set-One ,.cardOutlined_set-Two {
+  background: #FFFFFF;
+border: 1px solid #EDEEF2;
+border-radius: 13px;
+}
+.cardOutlined_set-One {
+  width: 315px;
+  height: 315px;
+}
+.cardOutlined_set-Two  {
+  display: flex;
+  align-items: center;
+  width: 712px;
+  height: 132px;
 }
 
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
+.reviewsOne, .reviewsTwo {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+}
+.reviewsImg {
+  width: 32px;
+}
+.reviewsName {
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2B2B43;
+}
+.reviewsDate {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  
+font-weight: 700;
+font-size: 10px;
+line-height: 14px;
+color: #83859C;
+}
+.like, .dislike{ 
+  font-family: 'Nunito';
+
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+color: #83859C;
+margin: 0 6px;
+}
+.reviews_comments {
+  font-family: 'Nunito';
+
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #2B2B43;
+margin: 14px;
+}
+
+.cardOut-img1 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 89%;
+  padding: 16px 0;
+}
+.cardOut-img2{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 29%;
+  padding: 0 10px;
+}
+.cardOutlined_Img {
   width: 100%;
-  opacity: 0.9;
+  border-radius: 13px;
 }
-
-.registerbtn:hover {
-  opacity: 1;
+.set-Title {
+  
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B2B43;
 }
-
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
+.set-Review {
+  
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #83859C;
 }
+.set-Price {
+  
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2B2B43;
+}
+.addTo {
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
+}
+.addTo-minus, .addTo-plus {
+
+}
+.addToCart-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+color: #4E60FF;
+width: 112px;
+height: 37px;
+border: none;
+background: #F3F4FF;
+border-radius: 6px;
+margin-top: 16px;
+}
+.cardOut_title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFF;
+}
+.cardOut_subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFF;
+}
+.circle_wrapper {
+  display: flex;
+}
+.circle {
+  display: flex;
+  border: 1px solid #FFF;
+  background: #fff;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  margin: 3.2px;
 }

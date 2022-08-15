@@ -386,6 +386,8 @@ div.actualWrapColor {
 }
 
 footer {
+  position: relative;
+    top: 100px;
   max-width: 1600px;
   margin: 0 auto;
   height: 100%;
@@ -730,7 +732,10 @@ ul.eastendFooterIcons_list {
   div.actualWrap {
     margin: 24px;
   }
-
+  footer {
+    position: relative;
+      top: 55px;
+  }
 }
 
 @media screen and (max-width:992px) {
@@ -758,6 +763,9 @@ ul.eastendFooterIcons_list {
 
     padding: 0;
   }
+  .restaurantsBox {
+    margin: 0 6px;
+  }
 
 }
 @media screen and (max-width: 800px){
@@ -768,7 +776,12 @@ ul.eastendFooterIcons_list {
     justify-items: start;
     margin: 0;
   }
-  
+  div.actualWrap {
+    width: 450px;
+  }
+  footer {
+    position: relative;
+      top: 45px;
 }
 @media screen and (max-width:650px) {
   .top-nav{
@@ -787,6 +800,10 @@ ul.eastendFooterIcons_list {
   .restaurantsWrap {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+  }
+  .restaurantsBox {
+    margin: 6px 0;
   }
 
   .block {
@@ -795,13 +812,13 @@ ul.eastendFooterIcons_list {
     margin-left: 0;
   }
 
-  div.actualWrap {
-    width: auto;
-  }
-
   .actualImage {
     width: 55%;
     object-fit: fill;
+  }
+  div.actualWrap {
+    width: 450px;
+    height: auto;
   }
 
   .foodSelectionList {
@@ -815,11 +832,18 @@ ul.eastendFooterIcons_list {
   }
 
   footer {
+    position: relative;
+    top: 0;
     margin-top: 100px;
   }
 
   .eastendFooter_sectionTwo-dark {
     padding: 0 16px 16px;
+  }
+
+  .eastendFooter_section-dark {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -840,12 +864,12 @@ ul.eastendFooterIcons_list {
   }
 
   .foodSelectionLink {
-    width: 116px;
+    width: 100px;
     margin-bottom: 8px;
   }
   div.actualWrap {
     display: flex;
-    width: 300px;
+    width: auto;
     height: 250px;
     flex-direction: column-reverse;
     align-items: center;
@@ -883,8 +907,4 @@ ul.eastendFooterIcons_list {
     margin: 12px;
   }
 
-  .eastendFooter_section-dark {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }

@@ -874,6 +874,11 @@ ul.eastendFooterIcons_list {
   .eastendFooter_sectionTwo-dark {
     padding: 0 16px 16px;
   }
+  .eastendFooter_section-dark {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
 
 }
 
@@ -891,7 +896,22 @@ ul.eastendFooterIcons_list {
   .menu>li {
     width: 50%;
   }
-  
+  .LogOutWrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    flex-direction: column;
+}
+ .LogOut {
+  width: 290px;
+  margin: 10px 19px 0;
+  }
+  .accountForm {
+    width: 300px;
+    margin: 10px 5px 0;
+  }
+
   footer {
     margin-top: 80px;
   }
@@ -914,9 +934,6 @@ ul.eastendFooterIcons_list {
     padding: 0;
     margin: 12px;
 }
-  .eastendFooter_section-dark {
-    display: flex;
-    flex-wrap: wrap;
-  }
+ 
 
 }

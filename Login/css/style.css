@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap');
 
+html{
+  height: 100%;
+}
 body{
+  height: 100%;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
 
 .wrapper {
+  min-height: 100%;
   display: flex;
   max-width: 1500px;
   width: 100%;
@@ -25,7 +30,12 @@ body{
   padding: 16px;
   background: #697BFF;
 }
-
+.cardOutlined_wrap {
+  display: grid;
+    align-items: center;
+    grid-column-gap: 5%;
+    grid-row-gap: 17%;
+}
 .login_container {
   display: grid;
 }
@@ -90,6 +100,12 @@ line-height: 20px;
 }
 
 .cardOutlined_rating {
+  grid-column-start: 2;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 1;
+
+
   width: 315px;
   height: 436px;
   background: #FFFFFF;
@@ -163,10 +179,21 @@ border: 1px solid #EDEEF2;
 border-radius: 13px;
 }
 .cardOutlined_set-One {
+  grid-column-start: 4;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 1;
+
+
   width: 315px;
   height: 315px;
 }
-.cardOutlined_set-Two  {
+.cardOutlined_set-Two {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 2;
+
   display: flex;
   align-items: center;
   width: 712px;

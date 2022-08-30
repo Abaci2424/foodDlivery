@@ -317,6 +317,10 @@ nav.nav .productList .productItem .productLink:hover:after {
   width: 50%;
 }
 
+.accountForm_Title {
+  margin: 16px;
+}
+
 .accountForm {
   width: 341px;
   padding: 15px;
@@ -630,7 +634,8 @@ ul.eastendFooterIcons_list {
     transition: height .5s ease-in;
     max-width: 1600px;
     margin: 0 auto;
-}
+  }
+
   .logoWrap {
     display: flex;
     align-items: center;
@@ -791,7 +796,6 @@ ul.eastendFooterIcons_list {
   .mainWrap {
     display: flex;
     align-items: center;
-    margin-right: 40px;
   }
 
   .headerSearch_toggleForm {
@@ -809,13 +813,22 @@ ul.eastendFooterIcons_list {
     margin: 24px;
   }
 
-  
+  .account {
+    height: auto;
+    width: 600px;
+  }
+
+  .accountForm {
+    width: 275px;
+  }
 }
 
 @media screen and (max-width:992px) {
-  
-  .account{
-    width: auto;
+
+  .account {
+    width: 451px;
+    height: auto;
+    margin: 0 auto;
   }
 
   .actualBlock {
@@ -838,57 +851,89 @@ ul.eastendFooterIcons_list {
   }
 
 }
-@media screen and (max-width:800px){
+
+@media screen and (max-width:800px) {
   .accountForm_container {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
+  }
+
+  .settingItemActive,
+  .settingItem {
+    width: 287px;
+  }
+
+  .account {
+    width: 361px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .changes_btn {
+    width: auto;
+  }
 
 }
 
 @media screen and (max-width:650px) {
-  .top-nav{
+  .top-nav {
     margin-right: 10px;
   }
+
   .searchButton {
     display: none;
   }
+
   .mainWrap {
     display: flex;
     align-items: center;
     margin: 0;
   }
+
   .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
   }
-  .account{
+
+  .settingItemActive,
+  .settingItem {
+    width: 350px;
+  }
+
+  .account {
+    width: 500px;
     height: auto;
+    margin: 0 auto;
   }
- 
+
   footer {
     margin-top: 100px;
   }
+
   .eastendFooter_sectionTwo-dark {
     padding: 0 16px 16px;
   }
+
   .eastendFooter_section-dark {
     display: flex;
     flex-wrap: wrap;
-    
+
   }
 
 }
 
 @media screen and (max-width:480px) {
-  .top-nav{
+  .top-nav {
     padding: 0;
   }
+
   .mainWrap {
     margin-right: 0;
   }
+
   .menu {
     left: 170px;
   }
@@ -896,20 +941,29 @@ ul.eastendFooterIcons_list {
   .menu>li {
     width: 50%;
   }
+
   .LogOutWrap {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
     flex-direction: column;
-}
- .LogOut {
-  width: 290px;
-  margin: 10px 19px 0;
   }
+
+  .LogOut {
+    width: 290px;
+    margin: 10px 19px 0;
+  }
+
   .accountForm {
     width: 300px;
     margin: 10px 5px 0;
+  }
+
+  .account {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
   }
 
   footer {
@@ -933,7 +987,5 @@ ul.eastendFooterIcons_list {
     justify-content: flex-start;
     padding: 0;
     margin: 12px;
-}
- 
-
+  }
 }

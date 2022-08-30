@@ -56,30 +56,45 @@
             fill="#4E60FF" />
         </svg>
       </div>
-      <form class="login-form" action="/action_page.php">
-        <div class="login_container">
-          <h1 class="loginTitle">Login</h1>
-          <p class="loginSubtitle">Sign in with your data that you entered during your registration.</p>
+
+      <div class="login-formWrap">
+        <form class="login-form" action="/action_page.php">
+          <div class="login_container">
+            <h1 class="loginTitle">Login</h1>
+            <p class="loginSubtitle">Sign in with your data that you entered during your registration.</p>
 
 
-          <label class="login_inputEmail" for="email"><b>Email</b></label>
-          <input class="login_input" type="text" placeholder="Enter Email" name="email" required>
+            <label class="login_inputEmail" for="email"><b>Email</b></label>
+            <input class="login_input" type="text" placeholder="Enter Email" name="email" required>
 
-          <label class="login_inputPassword" for="psw"><b>Password</b></label>
-          <input class="login_input" type="password" placeholder="Enter Password" name="psw" required>
+            <label class="login_inputPassword" for="psw"><b>Password</b>
+              <svg class="login_passwordSvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M0.833374 10C0.833374 10 4.16671 3.33333 10 3.33333C15.8334 3.33333 19.1667 10 19.1667 10C19.1667 10 15.8334 16.6667 10 16.6667C4.16671 16.6667 0.833374 10 0.833374 10Z"
+                  stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                  stroke="#C7C8D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></label>
+            <input class="login_input" type="password" placeholder="Enter Password" name="psw" required>
 
-          <label class="login_inputLogged" for="logged"><b>Keep me logged in</b></label>
-          <input class="login_inputCheck" type="checkbox" placeholder="Enter Logged" name="logged" required>
+            <div class="account_Check">
+              <input class="account_checkmark" type="checkbox" id="color-3" name="color-3" value="orderStatuses"
+                checked="">
+              <label for="color-3"><b>Keep me logged in</b></label>
+            </div>
+            <div class="login_buttonWrap">
+              <button class="login_button checkedBtm" type="submit">Login</button>
+              <button class="login_button noCheckedBtm" type="submit">Forgot password</button>
+            </div>
+          </div>
 
-
-          <button class="login_button checkedBtm" type="submit">Login</button>
-          <button class="login_button noCheckedBtm" type="submit">Forgot password</button>
-        </div>
-
-        <div class="signup-container">
-          <p class="signup_title">Don’t have an account? <a class="signup_link" href="#">Sign up</a>.</p>
-        </div>
-      </form>
+          <div class="signup-container">
+            <p class="signup_title">Don’t have an account? <a class="signup_link" href="#">Sign up</a>.</p>
+          </div>
+        </form>
+      </div>
     </section>
 
 
@@ -133,11 +148,13 @@
 
 
           <div class="reviewsContainer">
-            <select id="formatsGroup">Sort by:
+            <select id="formatsGroup">
+              Sort by:
+              <option class="sordBy" value="">Sort by:</option>
               <option class="sordBy" value="NewestFirst">Newest First</option>
               <option class="sordBy" value="OldestFirst">Oldest First</option>
             </select>
-
+            
             <div class="reviewsWrap">
               <div class="reviewsOne">
                 <img class="reviewsImg" src="img/woman.png" alt="">
@@ -175,24 +192,24 @@
                   <p class="reviews_comments">Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming
                     aperiam
                     delicata est.</p>
-                    <div class="reviews_like">
-                      <span class="like">
-                        <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" stroke="none" stroke-width="1"
-                          fill="#83859C">
-                          <path
-                            d="M-4.54747351e-13,14.3333336 L2.66666673,14.3333336 L2.66666673,6.33333345 L-4.54747351e-13,6.33333345 L-4.54747351e-13,14.3333336 Z M14.666667,7.00000014 C14.666667,6.26666679 14.066667,5.66666677 13.3333336,5.66666677 L9.12666687,5.66666677 L9.76000022,2.62000004 L9.78000022,2.4066667 C9.78000022,2.13333336 9.66666689,1.88000002 9.48666688,1.70000002 L8.7800002,1 L4.39333343,5.39333343 C4.14666676,5.63333344 4.00000009,5.96666678 4.00000009,6.33333345 L4.00000009,13.0000003 C4.00000009,13.7333336 4.6000001,14.3333336 5.33333345,14.3333336 L11.3333336,14.3333336 C11.8866669,14.3333336 12.3600003,14.0000003 12.5600003,13.5200003 L14.5733337,8.82000018 C14.6333337,8.66666684 14.666667,8.50666684 14.666667,8.3333335 L14.666667,7.00000014 Z"
-                            id="Shape-2"></path>
-                        </svg>
-                          24
-                      </span>
-                      <span class="dislike">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                          <path
-                            d="M9.71801 0.720964H11.3098C11.6473 0.714997 11.9751 0.833129 12.2312 1.05293C12.4873 1.27274 12.6537 1.57892 12.699 1.91335V6.08668C12.6537 6.42111 12.4873 6.72728 12.2312 6.94709C11.9751 7.1669 11.6473 7.28503 11.3098 7.27906H9.71801M5.54468 8.47144V10.8562C5.54468 11.3306 5.73312 11.7855 6.06854 12.1209C6.40396 12.4563 6.85889 12.6448 7.33325 12.6448L9.71801 7.27906V0.720964H2.99298C2.70542 0.717714 2.42638 0.818498 2.20726 1.00475C1.98814 1.191 1.84372 1.45016 1.8006 1.73449L0.977858 7.1002C0.951919 7.2711 0.963445 7.44559 1.01164 7.61158C1.05983 7.77758 1.14354 7.93112 1.25696 8.06155C1.37038 8.19199 1.5108 8.2962 1.6685 8.36698C1.8262 8.43775 1.9974 8.4734 2.17024 8.47144H5.54468Z"
-                            stroke="#83859C" stroke-width="0.894286" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>  10
-                      </span>
-                    </div>
+                  <div class="reviews_like">
+                    <span class="like">
+                      <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" stroke="none" stroke-width="1"
+                        fill="#83859C">
+                        <path
+                          d="M-4.54747351e-13,14.3333336 L2.66666673,14.3333336 L2.66666673,6.33333345 L-4.54747351e-13,6.33333345 L-4.54747351e-13,14.3333336 Z M14.666667,7.00000014 C14.666667,6.26666679 14.066667,5.66666677 13.3333336,5.66666677 L9.12666687,5.66666677 L9.76000022,2.62000004 L9.78000022,2.4066667 C9.78000022,2.13333336 9.66666689,1.88000002 9.48666688,1.70000002 L8.7800002,1 L4.39333343,5.39333343 C4.14666676,5.63333344 4.00000009,5.96666678 4.00000009,6.33333345 L4.00000009,13.0000003 C4.00000009,13.7333336 4.6000001,14.3333336 5.33333345,14.3333336 L11.3333336,14.3333336 C11.8866669,14.3333336 12.3600003,14.0000003 12.5600003,13.5200003 L14.5733337,8.82000018 C14.6333337,8.66666684 14.666667,8.50666684 14.666667,8.3333335 L14.666667,7.00000014 Z"
+                          id="Shape-2"></path>
+                      </svg>
+                      24
+                    </span>
+                    <span class="dislike">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path
+                          d="M9.71801 0.720964H11.3098C11.6473 0.714997 11.9751 0.833129 12.2312 1.05293C12.4873 1.27274 12.6537 1.57892 12.699 1.91335V6.08668C12.6537 6.42111 12.4873 6.72728 12.2312 6.94709C11.9751 7.1669 11.6473 7.28503 11.3098 7.27906H9.71801M5.54468 8.47144V10.8562C5.54468 11.3306 5.73312 11.7855 6.06854 12.1209C6.40396 12.4563 6.85889 12.6448 7.33325 12.6448L9.71801 7.27906V0.720964H2.99298C2.70542 0.717714 2.42638 0.818498 2.20726 1.00475C1.98814 1.191 1.84372 1.45016 1.8006 1.73449L0.977858 7.1002C0.951919 7.2711 0.963445 7.44559 1.01164 7.61158C1.05983 7.77758 1.14354 7.93112 1.25696 8.06155C1.37038 8.19199 1.5108 8.2962 1.6685 8.36698C1.8262 8.43775 1.9974 8.4734 2.17024 8.47144H5.54468Z"
+                          stroke="#83859C" stroke-width="0.894286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg> 10
+                    </span>
+                  </div>
                 </div>
               </div>
               <span></span>
@@ -263,43 +280,55 @@
           <p class="set-Review">Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod
             corpora, et saepe.</p>
           <span class="set-Price">$ 22.56</span>
+          <button class="set-Button"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+              fill="none">
+              <path d="M9.12 4.22002V14.02" stroke="#4E60FF" stroke-width="1.26" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M4.22003 9.12001H14.02" stroke="#4E60FF" stroke-width="1.26" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
         </div>
 
         <div class="cardOutlined_set-Two">
           <div class="cardOut-img2"><img class="cardOutlined_Img" src="img/img.png" alt=""></div>
           <div>
-          <span class="set-Title">Nigiri set</span>
-          <p class="set-Review">Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod
-            corpora, et saepe.</p>
-          <span class="set-Price">$ 16.80</span>
-        </div>
+            <span class="set-Title">Nigiri set</span>
+            <p class="set-Review">Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod
+              corpora, et saepe.</p>
+            <span class="set-Price">$ 16.80</span>
+          </div>
           <div class="addTo-wrap">
             <div class="addTo">
-            <button class="addTo-minus">-</button>
-            <span class="addTo-number">1</span>
-            <button class="addTo-plus">+</button>
-          </div>
-            <button class="addToCart-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path d="M9.12 4.22002V14.02" stroke="#4E60FF" stroke-width="1.26" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4.22003 9.12001H14.02" stroke="#4E60FF" stroke-width="1.26" stroke-linecap="round" stroke-linejoin="round"/>
+              <button class="addTo-minus"><span class="addToSembol">-</span></button>
+              <span class="addTo-number">1</span>
+              <button class="addTo-plus"><span class="addToSembol">+</span></button>
+            </div>
+            <button class="addToCart-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                viewBox="0 0 18 18" fill="none">
+                <path d="M9.12 4.22002V14.02" stroke="#4E60FF" stroke-width="1.26" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M4.22003 9.12001H14.02" stroke="#4E60FF" stroke-width="1.26" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
               Add to cart</button>
           </div>
-        
+
         </div>
       </div>
+      <div class="cardOut_Wrapper">
+        <div class="cardOut_title">Leave reviews for all meals</div>
+        <div class="cardOut_subtitle">Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus
+          molestiae,
+          eirmod assentior eum ne, et omnis antiopam mel.</div>
 
-      <div class="cardOut_title">Leave reviews for all meals</div>
-      <div class="cardOut_subtitle">Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae,
-        eirmod assentior eum ne, et omnis antiopam mel.</div>
-
-      <div class="circle_wrapper">
-      <span class="circle"></span>
-      <span class="circle"></span>
-      <span class="circle"></span>
-      <span class="circle"></span>
+        <div class="circle_wrapper">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
       </div>
-
 
     </section>
 

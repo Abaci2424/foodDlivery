@@ -1,58 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap');
 
-* {
+html {
+  font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
 }
 
-/* Add padding to containers */
-.container {
+body {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.containerForm {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 85px;
+}
+
+.cardOutlined {
+  width: 62%;
   padding: 16px;
-  background-color: white;
+  background: #697BFF;
 }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
+.cardOutlined_wrap {
+  grid-column-gap: 84px;
+  display: grid;
+  align-items: center;
+  grid-row-gap: 17%;
+  margin: 30px;
+}
+
+.login_container {
+  display: grid;
+}
+
+.login-formWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.login-form {
+  display: grid;
+  justify-items: center;
+  height: 100%;
+}
+
+.loginTitle {
+  font-family: Nunito;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.loginSubtitle {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #545563;
+  margin: 16px auto;
+}
+
+.login_input {
+  border: 1px solid #C7C8D2;
+  border-radius: 8px;
+  height: 44px;
+  margin-top: 8px;
+}
+
+.login_button {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  height: 44px;
+
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+.login_inputPassword {
+  position: relative;
 }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.login_passwordSvg {
+  position: absolute;
+  left: calc(100% - 37px);
+  top: calc(100% - 75px);
 }
 
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
+.login_inputPassword,
+.login_inputEmail {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545563;
+  padding: 16px 0 0;
+  margin-top: 9px;
+}
+
+.account_Check {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #545563;
+  margin: 30px 0;
+}
+
+.account_checkmark {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.account_checkmark+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.account_checkmark+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.account_checkmark:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.account_checkmark:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+
+.account_checkmark:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+
+.account_checkmark:checked+label::before {
+  border-color: #4E60FF;
+  background-color: #4E60FF;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.account_checkmark:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+.checkbox {
+  margin-bottom: 1em;
+}
+
+.checkedBtm {
+  background: #4E60FF;
+  box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+  border-radius: 8px;
+  color: #FFF;
+}
+
+.login_buttonWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noCheckedBtm {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4E60FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border: none;
+  counter-reset: #4E60FF;
+  margin-top: 16px;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.signup_title {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #545563;
+}
+
+.signup_link {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #4E60FF;
+
+}
+
+.cardOutlined_rating {
+  grid-column-start: 2;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 1;
+
+
+  width: 95%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EDEEF2;
+  border-radius: 14px;
+  margin-left: 36px;
+}
+
+.cardOutlined_header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EDEEF2;
+  padding: 12px;
+  align-items: center;
+}
+
+.cardOutlined_title {
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.cardOut_rating {
+  font-family: 'Nunito';
+
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #4E60FF;
+}
+
+.cardOut_star {
+  font-family: 'Nunito';
+
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  color: #83859C;
+}
+
+.cardOutReview-btn {
+  height: 39px;
+  width: 107px;
+  left: 191px;
+  top: 16px;
+  border-radius: 8px;
+  padding: 12px, 16px, 12px, 16px;
+  background: #FFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4E60FF;
+  border-radius: 8px;
+  border: 1px solid #4E60FF;
+}
+
+.cardOutReview-btn:hover {
+  color: #FFF;
+  background: #4E60FF;
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px -56px 59px -31px rgba(24, 24, 24, 0.48) inset;
+  -moz-box-shadow: 0px -56px 59px -31px rgba(24, 24, 24, 0.48) inset;
+  box-shadow: 0px -56px 59px -31px rgba(24, 24, 24, 0.48) inset;
+
+}
+
+#formatsGroup {
+  margin-top: 16px;
+}
+
+.cardOutlined_set-One,
+.cardOutlined_set-Two {
+  background: #FFFFFF;
+  border: 1px solid #EDEEF2;
+  border-radius: 13px;
+}
+
+.cardOutlined_set-One {
+  position: relative;
+
+  grid-column-start: 4;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 1;
   width: 100%;
-  opacity: 0.9;
+  height: 100%;
+  padding: 3px;
+  -webkit-box-shadow: 6px 9px 45px -6px rgba(24, 24, 24, 0.43);
+  -moz-box-shadow: 6px 9px 45px -6px rgba(24, 24, 24, 0.43);
+  box-shadow: 6px 9px 45px -6px rgba(24, 24, 24, 0.43);
 }
 
-.registerbtn:hover {
-  opacity: 1;
+.cardOutlined_set-Two {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 2;
+
+  display: flex;
+  align-items: center;
+  width: 712px;
+  height: 132px;
+  -webkit-box-shadow: -1px -13px 52px -9px rgba(24, 24, 24, 0.35);
+  -moz-box-shadow: -1px -13px 52px -9px rgba(24, 24, 24, 0.35);
+  box-shadow: -1px -13px 52px -9px rgba(24, 24, 24, 0.35);
+
 }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
+.reviewsOne,
+.reviewsTwo {
+  display: flex;
+  align-items: center;
+  margin: 16px;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
+.reviewsImg {
+  width: 32px;
+}
+
+.reviewsName {
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2B2B43;
+}
+
+.reviewsDate {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  color: #83859C;
+}
+
+.like,
+.dislike {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #83859C;
+  margin: 0 6px;
+}
+
+.reviews_comments {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2B2B43;
+  margin: 14px;
+}
+
+.cardOut-img1 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 89%;
+  padding: 16px 0;
+}
+
+.cardOut-img2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 29%;
+  padding: 0 10px;
+}
+
+.cardOutlined_Img {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.set-Title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B2B43;
+  padding: 16px;
+}
+
+.set-Review {
+  padding: 5px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #83859C;
+}
+
+.set-Price {
+  padding: 16px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2B2B43;
+}
+
+.set-Button {
+  position: absolute;
+  left: calc(100% - 45px);
+  top: calc(100% - 60px);
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4E60FF;
+  border: none;
+  background: #F3F4FF;
+  border-radius: 6px;
+  margin-top: 16px;
+  padding: 7px;
+}
+
+.addTo-wrap {
+  margin-right: 16px;
+}
+
+.addTo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.addTo-minus,
+.addTo-plus {
+  position: relative;
+  padding: 10px;
+  background: #EDEEF2;
+  border-radius: 6px;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+.addToSembol {
+  position: absolute;
+  left: calc(100% - 13px);
+  top: calc(100% - 18px);
+}
+
+.addTo-number {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2B2B43;
+}
+
+.addToCart-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4E60FF;
+  width: 112px;
+  height: 37px;
+  border: none;
+  background: #F3F4FF;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.cardOut_Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 50px
+}
+
+.cardOut_title {
   text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFF;
+  margin-top: 20px;
 }
+
+.cardOut_subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFF;
+  padding: 16px;
+}
+
+.circle_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px auto;
+}
+
+.circle {
+  display: flex;
+  border: 1px solid #FFF;
+  background: #fff;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  margin: 3.2px;
+}
+
+
+@media screen and (max-width:1200px) {
+  .containerForm {
+    padding: 0 10px;
+  }
+  .cardOutlined{
+    width: 67%;
+  }
+  .cardOutlined_wrap {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width:960px) {
+
+  .containerForm {
+    width: 50%;
+  }
+  .containerForm {
+    padding: 0 25px;
+}
+  .cardOutlined {
+    width: 50%;
+  }
+
+  .cardOutlined_rating {
+    margin: 0 auto;
+  }
+
+  .reviewsContainer {
+    -webkit-box-shadow: 0px 0px 36px -59px rgba(24, 24, 24, 1) inset;
+    -moz-box-shadow: 0px 0px 36px -59px rgba(24, 24, 24, 1) inset;
+    box-shadow: 0px 0px 36px -59px rgba(24, 24, 24, 1) inset;
+  }
+
+  .cardOutlined_set-One {
+    display: none;
+  }
+
+  .cardOutlined_set-Two {
+    display: none;
+  }
+}
+
+@media screen and (max-width:650px) {
+
+  .cardOutlined {
+    display: none;
+  }
+
+  .containerForm {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:460px) {}
